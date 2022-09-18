@@ -1,0 +1,17 @@
+body,
+html {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Lato, "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.is-important .b-task-percent-bar-outer {
+  background-color: red;
+}
+
+.is-important .b-task-percent-bar {
+  background-color: #3cb0ee;
+}

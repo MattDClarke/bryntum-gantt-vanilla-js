@@ -1,0 +1,69 @@
+{
+  "success": true,
+  "tasks": {
+    "rows": [
+      {
+        "id": 1000,
+        "name": "Launch SaaS Product",
+        "percentDone": 50,
+        "startDate": "2022-10-01",
+        "expanded": true,
+        "children": [
+          {
+            "id": 1,
+            "name": "Set up database",
+            "percentDone": 100,
+            "startDate": "2022-10-01",
+            "endDate": "2022-10-10",
+            "rollup": true,
+            "expanded": true
+          },
+          {
+            "id": 2,
+            "name": "Create Figma design",
+            "percentDone": 100,
+            "startDate": "2022-10-01",
+            "endDate": "2022-10-13",
+            "rollup": true,
+            "expanded": true
+          },
+          {
+            "id": 3,
+            "name": "Create component library",
+            "percentDone": 100,
+            "startDate": "2022-10-14",
+            "endDate": "2022-10-27",
+            "rollup": true,
+            "expanded": true
+          },
+          {
+            "id": 4,
+            "name": "Create API endpoints",
+            "percentDone": 90,
+            "startDate": "2022-10-28",
+            "endDate": "2022-11-07",
+            "rollup": true,
+            "expanded": true
+          },
+          {
+            "id": 5,
+            "name": "Set up test strategy",
+            "percentDone": 10,
+            "startDate": "2022-11-08",
+            "endDate": "2022-11-10",
+            "rollup": true,
+            "expanded": true,
+            "cls": "is-important"
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "rows": [
+      { "fromTask": 2, "toTask": 3 },
+      { "fromTask": 3, "toTask": 4 },
+      { "fromTask": 4, "toTask": 5 }
+    ]
+  }
+}

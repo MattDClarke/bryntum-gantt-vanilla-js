@@ -1,0 +1,1 @@
+# Bryntum Gantt - vanilla JavaScript
