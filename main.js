@@ -3,8 +3,6 @@ import "@bryntum/gantt/gantt.stockholm.min.css";
 
 const gantt = new Gantt({
   appendTo: document.body,
-  // startDate: new Date(2022, 9, 1),
-  // endDate: new Date(2022, 10, 20),
 
   project: {
     transport: {
@@ -15,5 +13,5 @@ const gantt = new Gantt({
     autoLoad: true,
   },
 
-  columns: [{ type: "name", width: 250 }],
+  columns: [{ type: "name", width: 250, text: "Tasks" }],
 });
